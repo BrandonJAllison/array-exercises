@@ -6,6 +6,12 @@
  */
 function sum (numbers) {
   // TODO: Add your solution here.
+  const reducer = (accumulator, currentValue) => accumulator + currentValue;
+  if (numbers.length === 0){
+    return 0;
+  }else
+  
+  return numbers.reduce(reducer)
 }
 
 /**
@@ -15,6 +21,12 @@ function sum (numbers) {
  */
 function doubleNumbers (numbers) {
   // TODO: Add your solution here.
+  const reducer = (accumulator, currentValue) => accumulator * currentValue;
+  if (numbers.length === 0){
+    return 0;
+  }else
+  
+  return numbers.reduce(reducer)
 }
 
 /**
@@ -33,6 +45,11 @@ function doubleCharacters (chars) {
  */
 function backwardsify (array) {
   // TODO: Add your solution here.
+  if (array.length === 0){
+    return {};
+  }else
+
+  return array.reverse()
 }
 
 /**
